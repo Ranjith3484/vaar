@@ -1,0 +1,185 @@
+
+.csrViewContainer{
+   width: 100%;
+   height:100%;
+   background-color: white;
+   z-index: 2;
+}
+
+@keyframes blink {
+   from, to { opacity: 1 }
+   50% { opacity: 0 }
+ }
+ 
+.canvasModel{
+    width: 100%;
+    height: 95%;
+    background-color: grey;
+    z-index: 3;
+}
+
+#csrLargeVideoInitialRemote{
+   width: 100%;
+   height: 95%;
+   background-color: grey;
+   z-index: 3;
+   top:0%;
+   left:0%;
+   position: absolute;
+   object-fit: cover;
+}
+
+.csrLargeImageInitialRemoteContainer{
+   width: 100%;
+   height: 95%;
+   background-color: #d8dada;
+   z-index: 3;
+   top:0%;
+   left:0%;
+   position: absolute;
+   object-fit: cover;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+
+.csrLargeImageInitialRemote{
+   width: 40%;
+   height: 40%;
+   z-index: 3;
+   margin-top: -8%;
+   position: absolute;
+   object-fit: contain;
+}
+
+#nonAssistViewCustomerName{
+   font-size: 25px !important;
+   font-weight: bolder;
+   color: white;
+   z-index: 3;
+   margin-right: 20px;
+   font-family: verizonFont;
+}
+
+.customerRemoteAudioStatus{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding-top: 25px;
+   z-index: 4;
+   top: 0%;
+   right: 3%;
+   position: absolute;
+}
+
+.customerRemoteAudioMutedIcon{
+   height: 35px;
+   display: none ;
+   z-index: 4;
+}
+
+.customerRemoteAudioUnMutedIcon{
+   height: 35px;
+   display: block;
+   animation: blink 1.5s ease-in infinite;
+   z-index: 4;
+}
+
+@keyframes blink {
+   from, to { opacity: 1 }
+   50% { opacity: 0 }
+ }
+
+.csrControlsRow{
+   width: 14%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 43%;
+   position: fixed;
+   bottom:11%; 
+   z-index: 4;
+}
+
+
+.csrViewCustomerContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   height:27% !important;
+   width: 20%; 
+   bottom: 13%;
+   position: fixed;
+   z-index: 4;
+   right: 5%;
+}
+
+
+#csrViewCustomerVideoElement {
+   height:84%;
+   width: 100%; 
+   border: 0;
+   object-fit: cover; 
+}
+
+#initialCsrViewLocalStream{
+   height:84%;
+   width: 100%; 
+   border: 0;
+   object-fit: cover;
+}
+
+.csrMiniViewGradientContainer {
+   position: relative;
+   display: none;
+}
+
+.csrMiniViewGradientContainer:after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 20%;
+   background: linear-gradient(180deg, rgba(245, 242, 242, 0), rgb(150, 147, 147));
+}
+
+.hideElement{
+   display: none;
+}
+
+.csrViewCustomerImage{
+   height:100%;
+   width: 100%;
+   border: 0;
+   z-index: 5;
+   float:right;
+}
+
+
+.miniViewStatusIcon-csrView{
+   height: 18px;
+   right: 0;
+   z-index: 6;
+   display: none;
+}
+
+.initialMiniViewStatusIcon-csrView{
+   height: 18px;
+   right: 0;
+   z-index: 6;
+}
+
+@media only screen and (max-width: 1400px) {
+   .csrControlsRow{
+       width: 20%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-left: 40%;
+       margin-top: -8%;
+       z-index: 4;
+   }
+   
+}

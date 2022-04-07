@@ -1,0 +1,304 @@
+
+.sideNavOpenerContainer{
+    display: flex;
+    float: left;
+    position: fixed;
+    z-index: 6;
+    top: 15%;
+    left: 0%;
+    margin: 0% !important;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    cursor: pointer;
+    transform: rotateX(360deg);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.sideNavOpenerContainer:hover{
+    transform: scale(1.02);
+}
+
+.sideNavOpenText{
+    font-size: 17px !important;
+    font-weight: 200;
+    color: black;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+}
+
+.sideNavContainer{
+    height: 95%;
+    width: 22% !important;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    border-top:0.1px solid #cccccc;
+}
+
+.sideNavWrap{
+    height: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideNavTabHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding: 8px 15px;
+}
+
+.sideNavTabHeaderText{
+    font-size: 16px !important;
+    color: white;
+    font-weight: bolder;
+    font-family: verizonBoldFont;
+    height: 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    margin: 0px !important;
+}
+
+.sideNavActiveTabHeaderText{
+    font-size: 16px !important;
+    color: white;
+    font-weight: bolder;
+    font-family: verizonBoldFont;
+    height: 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+.sideNavTabHeaderText:hover{
+    border-bottom: 2px solid red;
+}
+
+
+.sideNavCloseIcon{
+    height: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 5px !important;
+}
+
+.sideNavCloseIcon:hover{
+    transform: scale(1.1);
+}
+
+/* caller tab */
+.callerTabContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.callerTabWrap{
+    padding: 0px 15px !important;
+}
+
+.callerTabList{
+    padding: 10px 0px;
+    border-bottom: 0.5px solid #cccccc
+}
+
+.callerTabHeader{
+   font-size: 17px !important;
+   color: white;
+   font-weight: bold;
+   font-family: verizonBoldFont;
+}
+
+.callerTabPara{
+   font-size: 15px !important;
+   color: white;
+   font-weight: 200;
+   font-family: verizonFont;
+   margin-top: 2px !important;
+}
+
+.callerRatingRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.callerRatingIcon{
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 5px !important;
+}
+
+.callerDevicesContent{
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.callerDevicesText{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    font-style: verizonBoldFont;
+    color: black;
+}
+
+.callerDevicesRow{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 10px;
+    align-items: flex-end;
+}
+
+.callerDeviceColumn{
+    display:flex;
+    flex-direction: column;
+    height: fit-content;
+    min-width: 100px;
+    align-items: center;
+}
+
+.callerDeviceName{
+    margin:2px !important;
+    font-size: 15px !important;
+    color: black;
+    font-weight: 200;
+}
+
+.callerDeviceImage{
+    width: 60px;
+    height: 120px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+/* device tab */
+.deviceTabContainer{
+    height: 96% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.deviceListWrap{
+    padding: 0px 15px;
+}
+
+.brand-inside-nav{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-top-nav-text{
+    font-size: 15px !important;
+    font-weight: 200;
+    color: grey;
+}
+
+.deviceTabHeader{
+    font-size: 20px !important;
+    color: white;
+    font-weight: bold;
+    font-family: verizonBoldFont;
+    padding-bottom: 8px;
+    border-bottom:0.5px solid #cccccc
+}
+
+.deviceTabBrandRow{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   border-bottom:0.5px solid #cccccc;
+   cursor: pointer;
+}
+
+.brandName{
+   font-size: 15px !important;
+   font-weight: normal !important;
+   color: white !important;
+   padding: 1px 0px !important;
+}
+
+.brandNameBold{
+    font-size: 17px !important;
+    font-weight: bolder !important;
+    font-style: verizonBoldFont;
+    color: white !important;
+ }
+
+.chevron-icon{
+    height: 15px;
+    margin-right:5px;
+}
+
+.selectedDeviceContainer{
+    width: 100%;
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.selectedDeviceImage{
+    /* width: 50%; */
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selectedDeviceInnerContainer{
+   width: 90%;
+   margin-left: 5%;
+}
+
+.selectedDeviceName{
+    font-size: 15px !important;
+    font-weight: 200;
+    color: black !important;
+    margin-top: 30px !important;
+    padding-bottom: 4px;
+    border-bottom: 0.5px solid #cccccc;
+}
+
+.variantListRow{
+    display:flex;
+    flex-direction: row;
+    width:95%;
+    margin-left: 5%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.variantButton{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0.2px solid grey;
+}
+
+@media only screen and (max-height: 950px) {
+.sideNavContainer{
+    height: 95% !important; 
+    border-bottom: 0px !important;
+    box-shadow: 0px;
+    margin: 0px !important;
+}
+}

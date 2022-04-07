@@ -1,0 +1,211 @@
+/* open video call form */
+
+.openVideoCallForm{
+  width: 100% !important;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 3% 0%;
+}
+
+.openVideoCallFormInnerContainer{
+    width: 30% !important;
+    height: 100%;
+}
+
+.callFormHeader{
+  font-size: 25px !important;
+  font-weight: bolder;
+  margin-bottom: 20px !important;
+  font-family: verizonBoldFont;
+  color: black;
+}
+
+.thickBorder{
+  border: 2px solid black;
+  margin: 20px 0px;
+  margin-bottom: 30px;
+  background-color: black;
+}
+
+.inputLabel{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: verizonBoldFont;
+  color: grey;
+}
+
+.form-input{
+  background-color: transparent;
+   color: black;
+   outline: none;
+   outline-style: none;
+   border: 1px solid #cccccc;
+   border-bottom: 1.5px solid black;
+   padding: 6px 5px;
+   margin-top: 2px;
+   width: 96%;
+   font-size: 18px;
+   margin-bottom: 15px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+.selectWrap{
+  position: relative;
+  display: inline-block;
+  width: 96%; 
+}
+
+.selectContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  border: 1px solid #cccccc;
+  border-bottom: 1.5px solid black;
+  padding: 4px 5px;
+  margin-top: 2px;
+  align-items: center;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.selectText{
+  font-size: 18px !important;
+  margin: 0px;
+  padding: 0px 0px;
+}
+
+.selectedText{
+  font-size: 18px !important;
+  margin: 0px;
+  padding: 5px 0px;
+}
+
+.selectedTextBold{
+  font-size: 18px !important;
+  margin: 0px;
+  padding: 5px 0px;
+  font-weight: bold;
+  font-style: verizonBoldFont;
+}
+
+.selectIcon{
+  height: 10px;
+}
+
+.optionsContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  border: 1px solid #cccccc;
+  padding: 6px 5px;
+  background-color:white;
+  margin-top: -2px;
+  position: absolute;
+  z-index: 3;
+}
+
+.hideElement{
+    display: none;
+}
+
+  .submitButton{
+      height: 40px;
+      width: 160px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 100px;
+      margin-top: 30px;
+      cursor: pointer;
+      font-family: verizonBoldFont;
+      border: none;
+  }
+
+  .submitButtonDisabled{
+       height: 40px;
+      width: 160px;
+      background-color: #cccccc;
+      color: #666666;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 100px;
+      margin-top: 30px;
+      cursor: pointer;
+      font-family: verizonBoldFont;
+      border: none;
+  }
+
+  .submitButton:hover{
+    transform: scale(1.05);
+  }
+
+  .dataInfoText{
+    color: black;
+    margin-top:50px !important;
+  }
+
+  @media only screen and (max-width: 850px) {
+  
+    /* open video call form */
+    .openVideoCallFormInnerContainer{
+      width: 90% !important;
+      height: 100%;
+      padding-bottom: 10px;
+     }
+  
+    .form-input{
+         padding: 3px 10px;
+         margin-top: 10px;
+         width: 96%;
+         font-size: 20px;
+     }
+     select{
+         padding: 3px 10px;
+         margin-top: 10px;
+         width: 100%;
+         font-size: 20px;
+     }
+     .submitButton{
+        height: 40px;
+        width: 30%;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 100px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: verizonBoldFont;
+    }
+      .hideInMobile{
+        display: none;
+     }
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'verizonFont';
+  src:url('./assets/fonts/VERIZONNHGDS-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'verizonBoldFont';
+  src:url('./assets/fonts/VERIZONNHGDS-BOLD.TTF') format('truetype')
+}
+
+@font-face {
+  font-family: 'verizonItalicFont';
+  src:url('./assets/fonts/VERIZONNHGDS-ITALIC.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'verizonItalicBoldFont';
+  src:url('./assets/fonts/VERIZONNHGDS-BOLDITALIC.TTF') format('truetype')
+}
+
+body {
+  margin: 0;
+  font-family: verizonFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

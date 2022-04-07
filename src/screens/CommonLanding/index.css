@@ -1,0 +1,230 @@
+h1{
+    margin:2px !important;
+    font-size: 32px !important;
+    text-align: justify;
+}
+
+h2{
+    margin:2px !important;
+    font-size: 28px !important;
+    text-align: justify;
+}
+
+h3{
+    margin:2px !important;
+    font-size: 24px !important;
+    text-align: justify;
+}
+
+h4{
+    margin:2px !important;
+    font-size: 22px !important;
+    font-weight: 500;
+    text-align: justify;
+}
+
+h5{
+    margin: 2px !important;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    color: black !important;
+}
+
+h6{
+    margin:2px !important;
+    font-size: 15px !important;
+    color: grey;
+    text-align: justify;
+}
+
+p{
+    margin: 2px !important;
+    color: white;
+    text-align: justify;
+}
+
+.block{
+    display: flex;
+}
+
+/* Clear floats after the columns */
+.landingscreenRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Create two equal columns that floats next to each other */
+.landingscreenColumn {
+  float: left;
+  width: 50%;
+  height: 400px;
+}
+
+/* top images */
+.introImage{
+    width: 100%;
+    height:400px;
+}
+
+
+/* Create two equal columns and one large column that floats next to each other */
+.landingscreenOuterColumn {
+    float: left;
+    width: 28%;
+    padding-top: 10px;
+    min-height: 800px;
+}
+
+.customIconTruck{
+   height: 23px;
+   image-rendering: pixelated;
+   margin-left: -4px;
+   margin-right: 5px;
+}
+
+.grey{
+    background-color: #f2f2f2;
+}
+
+.white{
+    color:white;
+}
+
+.landingscreenContainer{
+    padding: 20px;
+    padding-right:40px;
+    padding-top:0px;
+}
+
+.spaceBetween{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.landingTable{
+    width: 100%;
+    margin: 0% !important;
+    padding: 0% !important;
+}
+.customIcons{
+    height: 20px;
+    object-fit: contain;
+}
+
+.customSVG{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.addSpace{
+    height: 20px !important;
+}
+
+.addSpace30{
+    height: 30px !important;
+}
+
+.actionLink{
+    font-weight: bold;
+    padding-left: 5px;
+    font-family: verizonBoldFont;
+}
+
+.actionLink:hover{
+   cursor: pointer;
+}
+
+.ratingRowLanding {
+   display:flex;
+   margin-left: 10px;
+}
+
+.ratingText{
+   padding-right: 15px;
+   font-style: normal;
+}
+
+.checked {
+    color: black;
+    padding-left: 3px;
+}
+
+.unchecked {
+    color: grey;
+    padding-left: 3px;
+}
+
+.landingscreenInnerColumn {
+    float: left;
+    width: 44%;
+    min-height: 800px;
+}
+
+.mapContainer{
+    padding:20px;
+    padding-bottom: 0px !important;
+}
+
+.googleMap{
+    padding: 5px;
+    min-height: 780px;
+    width:100%
+}
+
+.googleMapImage{
+  height: 780px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#iconSize{
+    font-size: 18px;
+}
+
+#textAlignedIcon{
+    font-size:25px;
+    padding-top: 3px;
+}
+
+.iconAlignedText{
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: middle;
+    font-family: verizonBoldFont;
+    font-style: normal;
+}
+
+#coloredIcon{
+    font-size:15px;
+    color:green;
+}
+
+@media only screen and (max-width: 850px) {
+    .landingscreenColumn {
+        float: left;
+        width: 100%;
+    }
+    .landingscreenOuterColumn {
+        float: left;
+        width: 100%;
+        min-height: fit-content;
+        padding-bottom: 50px;
+    }
+    .landingscreenInnerColumn {
+        float: left;
+        width: 100%;
+    }
+    .mapContainer{
+        padding:0px;
+        padding-bottom: 0px !important;
+        width: 97%;
+    }
+
+      .hideInMobile{
+        display: none;
+     }
+}

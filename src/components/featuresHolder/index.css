@@ -1,0 +1,280 @@
+.featuresOpenerIcon{
+    height: 80px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 6;
+    bottom:11%; 
+    left: 2%;
+}
+
+.featuresOpenerIcon:hover{
+    transform: scale(1.02);
+}
+
+.featuresContainer{
+    z-index: 8;
+    height: 52% !important;
+    width: 22% !important;
+    position: absolute;
+    bottom: 5% !important;
+    left: 0%;
+    background-color: white;
+    overflow-y: auto;
+    margin-bottom: -1px; 
+}
+
+.featuresInnerContainer{
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuresNavHeader{
+    height: 10% !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0px 15px;
+}
+
+.featuresContainerText{
+   font-size: 20px !important;
+   font-weight: bold !important;
+   color: white;
+}
+
+.featuresCloseIcon{
+    height: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 5px !important;
+}
+
+.featuresCloseIcon:hover{
+    transform: scale(1.1);
+}
+
+.featuresHeaderTab{
+    display: flex;
+    height: 5% !important;
+    max-width: 100% !important;
+    padding: 0px 15px;
+    padding-top: 10px; 
+    background-color: white;
+    justify-content: space-between;
+    border-bottom: 2px solid #cccccc;
+}
+
+.featuresTabHeaderText{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    padding-bottom: 5px;
+    margin: 0px !important;
+    cursor: pointer;
+}
+
+.featuresTabHeaderText:hover{
+    border-bottom: 3px solid red;
+}
+
+.featuresTabHeaderActiveText{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    padding-bottom: 5px;
+    margin: 0px !important;
+    margin-bottom: 0px !important;
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+.featuresTabContent{
+    max-width: 100% !important;
+    padding: 0px 15px;
+    height: 73% !important;
+    overflow-y: auto;
+}
+
+.featuresCommonListWrap{
+    margin-top: 30px;
+}
+
+.featuredCommonListH3{
+   font-size: 20px !important;
+   font-weight: bold !important;
+   color: black;
+   font-style: verizonBoldFont !important;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #cccccc;
+}
+
+.featuresCommonListText{
+    font-size: 16px;
+    font-weight: 200;
+    padding: 7px 0px;
+    padding-left: 15px !important;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.featuresCommonListText:hover{
+    font-weight:bold;
+    border-left: 3px solid red;
+    padding-left: 12px !important;
+}
+
+.featuresCommonListActiveText{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 0px;
+    padding-left: 12px !important;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    border-left: 3px solid red;
+}
+
+.featuresAnnotationSubHead{
+    font-size: 16px !important;
+    font-weight: 200;
+    padding: 7px 0px; 
+}
+
+.sliderRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.colorDotWrap{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% !important;
+    padding:0% !important; 
+}
+
+.colorDot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.featuresAnnotationPixel{
+    font-size: 14px !important;
+    font-weight: 200;
+    padding:0% !important; 
+    margin: 0% !important;
+}
+
+#drawLine{
+    position:absolute;
+    pointer-events: none;
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 2px;
+    background-color: #cccccc;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 15%;
+    margin-top: -15px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+
+  .annotateColorRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .annotateColorButton{
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 0.2px solid grey;
+  }
+  
+.featuresButtonArea{
+    max-width: 100% !important;
+    padding: 0px 15px;
+    height:12% !important;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.shareQRButton{
+    background-color: white;
+    border: none;
+    border:1px solid black;
+    height: 70%;
+    width: 35%;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bold !important;
+}
+
+.shareQRButton:hover{
+    transform: scale(1.02);
+}
+
+.unboxButton{
+    background-color: black;
+    border: none;
+    height: 70%;
+    width: 35%;
+    border-radius: 100px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold !important;
+}
+
+.unboxButton:hover{
+    transform: scale(1.02);
+}
+
+@media only screen and (max-height: 950px) {
+.featuresHeaderTab{
+    height: 7% !important;
+}
+}

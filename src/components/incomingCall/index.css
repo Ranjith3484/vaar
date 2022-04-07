@@ -1,0 +1,174 @@
+.incomingCallWrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.incomingCallContainer{
+    width: 35%;
+    height: 38%;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.callHeader{
+    height: 15%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.incomingCallLogo{
+    height: 70%;
+    margin-left: 2%;
+}
+
+.callHeaderNameRow{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.callHeaderName{
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    font-style: verizonBoldFont;
+    color: white;
+} 
+
+.callHeaderTime{
+    font-size: 14px !important;
+    color: white;
+}
+
+.callAlertText{
+    font-size: 18px !important;
+    font-weight: bolder;
+    font-style: verizonBoldFont;
+    color: white;
+    width: 65%;
+    text-align:center
+}
+
+.callContent{
+    height: 85%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.callContextH3{
+   font-size: 16px !important;
+   font-weight: normal !important;
+}
+
+.callContextH3-Bold{
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    font-style: verizonBoldFont !important;
+ }
+
+.callContextRow{
+    display: flex;
+    margin-top: 10px;
+}
+
+.callTimer{
+    font-size: 22px;
+    color: grey;
+    padding: 20px 0px;
+}
+
+.acceptCallButton{
+      padding: 10px 0px;
+      width: 45%;
+      background-color: black;
+      color: white;
+      font-size: 16px !important;
+      font-weight: bolder !important;
+      border-radius: 100px;
+      cursor: pointer;
+      font-family: verizonBoldFont;
+      border: none;
+}
+
+.acceptCallButton:hover{
+    transform: scale(1.02);
+}
+
+.declineCallButton{
+    padding: 10px 0px;
+    width: 45%;
+    background-color: white;
+    color: black;
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: verizonBoldFont;
+    border: none;
+    border:1px solid black
+}
+
+.declineCallButton:hover{
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 850px) {
+    .incomingCallContainer{
+        width: 25%;
+        height: 38%;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+   }
+}
+
+@media only screen and (max-height: 950px) {
+    .incomingCallContainer{
+        width: 38%;
+        height: 38%;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+   }
+}
+
+@media only screen and (max-height: 750px) {
+    .incomingCallContainer{
+        width: 40%;
+        height: 50%;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+   }
+}

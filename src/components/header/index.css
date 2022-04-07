@@ -1,0 +1,22 @@
+.commonHeaderContainer{
+    height: 7% !important;
+    background-color: black;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.headerLogo{
+    height: 30px;
+    object-fit: contain;
+    margin-left: 2%;
+}
+
+@media only screen and (max-width: 850px) {
+    .headerLogo{
+        height: 30px;
+        object-fit: contain;
+        margin-left: 5%;
+    } 
+}

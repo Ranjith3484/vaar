@@ -1,0 +1,7 @@
+.bodyContent{
+  height: 93% !important;
+  width: 100% !important;
+  position: fixed;
+  top:7%;
+  overflow: auto;
+}

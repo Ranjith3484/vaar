@@ -1,0 +1,189 @@
+
+.customerViewContainer{
+    width: 100%;
+    height: 96%;
+    background-color: white;
+    z-index: 2;
+}
+
+.CSRremoteAudioStatus{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 25px;
+    z-index: 4;
+    margin-right: 3%;
+}
+
+.CSRremoteAudioMutedIcon{
+    height: 35px;
+    display: none ;
+    z-index: 4;
+}
+
+.CSRremoteAudioUnMutedIcon{
+    height: 35px;
+    display: block;
+    animation: blink 1.5s ease-in infinite;
+    z-index: 4;
+}
+
+@keyframes blink {
+    from, to { opacity: 1 }
+    50% { opacity: 0 }
+  }
+  
+#customerViewClientVideoElement{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+    z-index: 3;
+    margin-top: -60px;
+}
+
+.customerControlsRow{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: -8%;
+    z-index: 4;
+}
+
+.control-icon{
+    height: 80px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.control-icon:hover{
+    transform: scale(1.02);
+}
+
+.customerViewCustomerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height:27% !important;
+    width: 20%; 
+    margin-top: -16% !important;
+    z-index: 4;
+    margin-left: 76%;
+}
+
+
+#customerViewCustomerVideoElement {
+    height:88%;
+    width: 100%; 
+    border: 0;
+    object-fit: cover;
+}
+
+.hideElement{
+    display: none;
+}
+
+.customerViewCustomerImage{
+    height:100%;
+    width: 100%;
+    border: 0;
+    z-index: 5;
+    float:right;
+}
+
+.miniViewGradientContainer {
+    position: relative;
+    display: none;
+ }
+ 
+ .miniViewGradientContainer:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(180deg, rgba(245, 242, 242, 0), rgb(150, 147, 147));
+ }
+
+.miniViewStatusContainer{
+   width: 100% !important;
+   height: 40px;
+   margin-top: -40px;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   background: linear-gradient(180deg, rgba(245, 242, 242, 0), rgb(150, 147, 147));
+}
+
+.overlayName{
+    color:white;
+    font-size: 22px;
+    text-align: center;
+    font-family: verizonFont;
+    width: 80%;
+    z-index: 6;
+}
+
+.miniViewStatusIcon{
+    height: 18px;
+    right: 0;
+    z-index: 6;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .customerControlsRow{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 35%;
+        margin-top: -8%;
+        z-index: 4;
+    }
+    .customerViewCustomerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height:30% !important;
+        width: 20%; 
+        margin-top: -21% !important;
+        z-index: 4;
+        margin-left: 76%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #customerViewClientVideoElement{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: white;
+        z-index: 3;
+    }
+    
+    .customerControlsRow{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: -20%;
+        z-index: 4;
+    }
+    
+    .control-icon{
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .customerViewCustomerContainer{
+        display: none;
+    }
+
+}
